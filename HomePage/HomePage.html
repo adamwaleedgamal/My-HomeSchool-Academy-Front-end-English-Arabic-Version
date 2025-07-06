@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Homeschool Academy - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Almarai&family=Amiri&family=Cairo&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+             @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+              @import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
+      body {
+        font-family: 'Barlow Condensed', 'Almarai', 'Amiri', 'Cairo', sans-serif;
+        background-color: #f5f5f5;
+      }
+  html {
+    scroll-behavior: smooth;
+  }
+
+         /* Animate rocket glow */
+   @keyframes glow {
+     0%, 100% {
+       filter: drop-shadow(0 0 6px #3b82f6);
+     }
+     50% {
+       filter: drop-shadow(0 0 20px #60a5fa);
+     }
+   }
+   /* Animate logo bounce */
+   @keyframes bounce {
+     0%, 100% {
+       transform: translateY(0);
+     }
+     50% {
+       transform: translateY(-10%);
+     }
+   }
+   /* Animate button pulse */
+   @keyframes pulseBtn {
+     0%, 100% {
+       box-shadow: 0 0 8px #9e0a1e;
+     }
+     50% {
+       box-shadow: 0 0 20px #d63333;
+     }
+   }
+
+      h2.underline-title {
+     position: relative;
+     display: inline-block;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   h2.underline-title::after {
+     content: "";
+     position: absolute;
+     bottom: -6px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 60px;
+     height: 4px;
+     background-color: #dc2626; /* لون أحمر Tailwind's red-600 */
+     border-radius: 2px;
+   }
+      /* Hide scrollbar for slider */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Section 1: Top Bar, Nav, Hero -->
+     <div  class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
+   <div class="flex items-center space-x-4 space-x-reverse">
+    <a href="../HomePage/HomePage.html"><span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
+     <i class="fas fa-home text-xs sm:text-sm">
+     </i>
+     <span>
+      الرئيسية
+     </span>
+    </span></a>
+    
+    <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
+     <i class="fas fa-phone-alt text-xs sm:text-sm">
+     </i>
+    <a href="../CallUsPage/classus.html"> <span>
+      اتصل بنا ؟
+     </span></a>
+    </span>
+   </div>
+   <div class="flex items-center space-x-2 space-x-reverse">
+    <i class="fas fa-search">
+    </i>
+    <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-36 sm:w-48 focus:outline-none" placeholder="البحث  ..." type="text"/>
+   </div>
+   <div class="font-bold text-xs sm:text-sm tracking-widest">
+    MY HOMESCHOOL ACADEMY
+   </div>
+    <!-- Language Switcher -->
+    <div class="flex items-center space-x-2">
+      <a href="HomePage_En.html" class="text-white hover:underline">EN</a>
+      <span class="text-white">|</span>
+      <a href="#" class="text-white hover:underline">AR</a>
+  </div>
+  </div>
+
+      <!-- Navigation bar -->
+  <nav class="flex items-center justify-center px-4 py-3 border-b border-gray-200 max-w-[1200px] mx-auto relative">
+   <ul class="flex items-center space-x-6 space-x-reverse text-sm sm:text-base font-semibold text-gray-700">
+    <li class="relative group cursor-pointer">
+     <span>
+      عن الأكاديمية
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <a href="../Mann7nPage/Mann7n.html"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      من نحن
+      </li>
+      </a>
+      <a href="#message"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       الرؤية والرسالة 
+      </li>
+      </a>
+     </ul>
+    </li>
+    <li class="relative group cursor-pointer">
+     <span>
+      المراحل الدراسية
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     مرحله كي جي 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     المرحلة الابتدائية 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+        المرحلة الاعدادية
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      المرحلة الثانوية 
+      </li>
+     </ul>
+    </li>
+    <a href="../ApplyPage/Apply.html"><P class="relative group cursor-pointer">
+     <span>
+      التقديم
+      <!-- <i class="fas fa-chevron-down text-xs">
+      </i> -->
+     <!-- </span>
+     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+        
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       طريقة 2
+      </li>
+     </ul> -->
+    </p>
+    </a>
+    
+    <a href="../WorkPage/Work.html"><p class="relative group cursor-pointer">
+     <span>
+      الوظائف
+      <!-- <i class="fas fa-chevron-down text-xs">
+      </i> -->
+     </span>
+     <!-- <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       وظيفة 1
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       وظيفة 2
+      </li>
+     </ul>
+    </li> -->
+  </p></a>
+  <a href="../ProfilePage/Profile.html"><div class="flex-shrink-0 animate-bounce" style=" position: relative;left: 90vb ;top: 1vw;animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite;">
+    <img alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
+   </div>
+  </a>
+  </nav>
+
+<!-- Section two -->
+ <section class="w-100 position relative top-full h-screen " >
+      <img class="w-full h-auto object-cover" style="width: 100%;" src="../HomePage/pics/frist.jpg" />
+    <div class="absolute bottom-8 left-8 text-left text-white bg-gradient-to-r from-white/70 via-white/30 to-transparent p-4 rounded-md max-w-[320px]">
+    <p class="text-xs sm:text-sm font-semibold mb-1">
+     Welcome to HomeSchool Academy
+    </p>
+    <h1 class="text-xl sm:text-2xl font-semibold leading-snug mb-1 tracking-wide">
+     YOUR CHILD FUTURE
+     <br/>
+     IS HERE
+    </h1>
+<a href="../Mann7nPage/Mann7n.html">
+        <button class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] hover:opacity-90 text-white px-6 py-3 rounded-full font-semibold animate-pulse delay-200">
+           اقرأ اكثر <i class="fas fa-arrow-left mr-2"></i>
+        </button></a>
+   </div>
+  </section>
+  <br> <br>
+
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12" dir="rtl">
+    
+    <!-- النص -->
+    <div>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">ليه</h2>
+      <h3 class="text-2xl font-bold text-blue-600 mb-6">My Homeschool Academy؟</h3>
+      <ul class="list-disc pr-6 text-gray-800 space-y-4 text-lg leading-relaxed">
+        <li>تفاعل أونلاين بنفس كفاءة الحضور، مع تسجيل الجلسات.</li>
+        <li>متابعة يومية، اختبارات، وخطة منظمة لأولياء الأمور.</li>
+        <li>طاقم تدريس مؤهل بخبرات حديثة ومتطورة.</li>
+        <li>دعم نفسي لاكتشاف وتنمية مواهب الطلاب.</li>
+        <li>تواصل مباشر مع الإدارة والمعلمين.</li>
+        <li>أسعار مناسبة وتأسيس مجاني للطلاب الجدد.</li>
+      </ul>
+    </div>
+
+    <!-- صورة الشعار -->
+    <div class="flex justify-center md:justify-end">
+      <img src="../HomePage/pics/logo.jpg" alt="شعار الأكاديمية" class="rounded-2xl shadow-xl w-full max-w-sm border border-gray-200">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Section 2: Why My Homeschool Academy -->
+<!-- <section class="relative min-h-screen flex items-center justify-center px-6 py-12 bg-[#f5f5f5] overflow-hidden">
+  <img 
+    src="pics/sheet-from-notepad-pencils-right.jpg" 
+    alt="خلفية بنقشة بيضاء فاتحة مع ملمس خفيف" 
+    class="absolute inset-0 w-full h-full object-cover  z-0 pointer-events-none" 
+  />
+
+  <div style="position: relative;bottom: 4vw;right: 3vw;" class="relative z-10 max-w-6xl w-full flex flex-col md:flex-row items-center md:items-start gap-8 bg-transparent">
+
+    <div style="position:relative;right: 18vw;" class="text-black max-w-3xl text-sm md:text-base leading-relaxed order-2 md:order-1">
+      <div class="fade-in-up delay-100">
+        <h2 class="text-3xl font-extrabold mb-4">ليه MY HOMESCHOOL ACADEMY؟</h2>
+        <ul class="list-disc pr-6 text-gray-700 space-y-2">
+          <li>تفاعل أونلاين بمستوى حضوري مع تسجيل الحصص.</li>
+          <li>متابعة يومية واختبارات وخطة لأولياء الأمور.</li>
+          <li>كادر تدريسي مؤهل وخبرات حديثة.</li>
+          <li>دعم نفسي لاكتشاف مواهب الطلاب.</li>
+          <li>تواصل مباشر مع الإدارة والمعلمات.</li>
+          <li>رسوم مناسبة مع تأسيس مجاني للطلاب الجدد.</li>
+        </ul>
+      </div>
+
+   <div class="fade-in-scale delay-300 ">
+        <img src="pics/logo.jpg" alt="Logo" class="rounded-xl shadow-lg" />
+      </div>
+    
+  </div>
+</section> -->
+
+
+    <!-- Latest News -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between items-center mb-8 fade-in-up delay-100">
+        <h2 class="text-3xl font-extrabold">أحدث الأخبار</h2>
+        <a href="../NewsPage/News.html"><button class="bg-[#3a0a0a] text-white px-4 py-2 rounded-full hover:opacity-90 transition">المزيد من الأخبار</button></a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-lg fade-in-scale delay-200">
+          <h3 class="font-semibold text-blue-800 mb-2">الحكومة والتعليم الرقمي</h3>
+          <p class="text-sm leading-relaxed">البرلمان العربي دعا لدعم الإطار التنظيمي للتعليم عن بعد ومكافحة الأمية الرقمية.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg fade-in-scale delay-300">
+          <h3 class="font-semibold text-blue-800 mb-2">تشجيع الابتكار</h3>
+          <p class="text-sm leading-relaxed">الاعتماد على الذكاء الاصطناعي والواقع المعزز لخلق بيئة تعليمية تفاعلية.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg fade-in-scale delay-400">
+          <h3 class="font-semibold text-blue-800 mb-2">تدريب المعلمين</h3>
+          <p class="text-sm leading-relaxed">وزارة مختصة أنشأت برامج لتأهيل المعلمين إلكترونياً وضمان جودة التدريس.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Articles Section -->
+  <section id="maqaltt" class="relative min-h-screen py-16 px-6 bg-fixed bg-center bg-cover" style="background-image: url('pics/maqalt.jpg');">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col sm:flex-row justify-between items-center mb-10 fade-in-up delay-100">
+        <h2 class="text-3xl font-extrabold">المقالات</h2>
+       <a href="../MoreMaqlatPage/MoreMaqlat.html"> <button class="bg-[#1a0000] text-white px-6 py-2 rounded-full hover:opacity-90 transition fade-in-up delay-300">المزيد من المقالات</button></a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 fade-in-scale delay-200">
+          <img src="pics/maqaldiv.jpg" alt="" class="w-62 h-62 mx-auto mb-4" />
+          <p class="text-gray-800 text-sm text-center mb-4">لمستوى الطلاب وأكبر اهتمام من الأكاديمية في المرحلة الخامسة في حياة الطالب فهي تحدد تخصصه العلمي والمهني وطريقة إلى المستقبل بذلك الله لذلك يحتاج الطالب إلى تعليم ثانوي متميز يساعده على تحقيق أهدافه وطموحاته</p>
+         <a href="../readmoremaqlatPage/readmoremaqlat.html"> <button class="bg-[#1a0000] text-white px-5 py-2 rounded-full hover:opacity-90 transition">قراءة المزيد</button></a>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 fade-in-scale delay-300">
+          <img src="pics/maqaldiv.jpg" alt="" class="w-62 h-62 mx-auto mb-4" />
+          <p class="text-gray-800 text-sm text-center mb-4">لمستوى الطلاب وأكبر اهتمام من الأكاديمية في المرحلة الخامسة في حياة الطالب فهي تحدد تخصصه العلمي والمهني وطريقة إلى المستقبل بذلك الله لذلك يحتاج الطالب إلى تعليم ثانوي متميز يساعده على تحقيق أهدافه وطموحاته</p>
+         <a href="../readmoremaqlatPage/readmoremaqlat.html"> <button class="bg-[#1a0000] text-white px-5 py-2 rounded-full hover:opacity-90 transition">قراءة المزيد</button></a>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 fade-in-scale delay-400">
+          <img src="pics/maqaldiv.jpg" alt="" class="w-62 h-62 mx-auto mb-4" />
+          <p class="text-gray-800 text-sm text-center mb-4">لمستوى الطلاب وأكبر اهتمام من الأكاديمية في المرحلة الخامسة في حياة الطالب فهي تحدد تخصصه العلمي والمهني وطريقة إلى المستقبل بذلك الله لذلك يحتاج الطالب إلى تعليم ثانوي متميز يساعده على تحقيق أهدافه وطموحاته</p>
+         <a href="../readmoremaqlatPage/readmoremaqlat.html"> <button class="bg-[#1a0000] text-white px-5 py-2 rounded-full hover:opacity-90 transition">قراءة المزيد</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="message" class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12 fade-in-up delay-100">
+      <h2 class="text-3xl font-extrabold">الرؤية والرسالة</h2>
+      <p class="text-gray-600 mt-4">أن نكون مؤسسة تعليمية وطنية عالمية رائدة تعتمد الانفتاح العلمي والقيم الوطنية.</p>
+    </div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 fade-in-up delay-200">
+           <div class="bg-gray-50 rounded-xl p-6 shadow">
+           <div class="flex-1">
+     <div class="flex items-center gap- mb-1">
+      <img alt="رمز هدف" class="w-5 h-5" height="20" src="pics/image.png" width="20"/>
+      <h2 class="font-semibold">
+رؤيتنا الـVision      </h2>
+     </div>
+     <p class="leading-tight">
+تطوير العملية التعليمية وتحقيق التنمية      </p>
+<p class="leading-tight">
+المهنية المستدامة للمعلمين ومساعدتهم
+</p>
+    </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-6 shadow">
+           <div  class="flex-1">
+     <div class="flex items-center gap- mb-1">
+      <img alt="رمز هدف" class="w-5 h-5" height="20" src="pics/goal.png" width="20"/>
+      <h2 class="font-semibold">
+       رسالتنا Mission
+      </h2>
+     </div>
+     <p class="leading-tight">
+      حماية حق أي طالب في التعليم
+     </p>
+    </div>
+      </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 shadow">
+           <div  class="flex-1">
+     <div class="flex items-center gap- mb-1">
+      <img alt="رمز هدف" class="w-5 h-5" height="20" src="pics/imagee.png" width="20"/>
+      <h2 class="font-semibold">
+اهدافنا الـTarget      </h2>
+     </div>
+     <p class="leading-tight">
+توفير الوقت والجهد لدى الطلاب الغير قادرين على تلقي التعليم بالطرق التقليدية     </p>
+    </div>
+      </div>
+
+    </div>
+  </section>
+    <!-- Section 5: Vision & Mission -->
+
+     
+      <!-- <section style="align-items: center;" class="max-w-7xl mx-auto px-6 py-10">
+<div class="text-center mb-10">
+  <h2 class="text-3xl font-extrabold text-gray-900">الرؤية والرسالة</h2>
+  <div class="mx-auto mt-2 w-64 h-1 bg-gradient-to-r from-[#9e0a1e] to-[#1a1a4d] rounded-full shadow-md"></div>
+</div>
+
+   <p class="text-center text-xs text-gray-500 mb-10 max-w-3xl mx-auto leading-relaxed">
+    أن تكون المدرسة مؤسسة تعليمية وطنية ومن ثم عالمية رائدة ومتميزة تعتمد الانفتاح العلمي والفكري وترسيخ القيم الوطنية وأخلاقياته نهجها العام.
+   </p>
+   <div class="flex flex-col md:flex-row justify-between text-xs text-gray-700 max-w-5xl mx-auto gap-8 md:gap-0">
+    <div style="position: relative;right: 9vw;" class="flex-1">
+       <div class="flex items-center gap-2 mb-1">
+      <img alt="رمز مجلد ورقي" class="w-5 h-5" height="20" src="pics/image.png" width="20"/>
+      <h2 class="font-semibold">
+       أهدافنا Target
+      </h2>
+     </div>
+     <p class="leading-tight">
+      توفير فرص وإمكانيات لدى الطلاب الغير
+      <br/>
+      القادرين على تلقي تعليم بإتقان
+      <br/>
+      العملية
+     </p>
+    </div>
+
+    <div style="position: relative;right: 7vw;" class="flex-1">
+     <div class="flex items-center gap- mb-1">
+      <img alt="رمز هدف" class="w-5 h-5" height="20" src="pics/goal.png" width="20"/>
+      <h2 class="font-semibold">
+       رسالتنا Mission
+      </h2>
+     </div>
+     <p class="leading-tight">
+      حماية حق أي طالب في التعليم
+     </p>
+    </div>
+     
+    <div style="position: relative;right: 2vw;" class="flex-1">
+     <div class="flex items-center gap-2 mb-1">
+      <img alt="رمز منزل" class="w-5 h-5" src="pics/imagee.png"/>
+      <h2 class="font-semibold">
+       رؤيتنا Vision
+      </h2>
+     </div>
+     <p class="leading-tight">
+      تطوير العملية التعليمية وتحقيق
+      <br/>
+      تقدير القيمة المستدامة للمتعلمين
+      <br/>
+      ومساعدتهم
+     </p>
+    </div>
+
+   </div>
+  </section> -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+   <section>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6 text-center">
+     كوادرنا
+    </h2>
+    <div class="relative">
+     <button aria-label="التالي" class="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-indigo-600 text-white rounded-full p-3 shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 z-10" id="nextBtn">
+      <i class="fas fa-chevron-left">
+      </i>
+     </button>
+     <div class="flex space-x-6 space-x-reverse overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory" id="slider">
+      <article class="flex-shrink-0 w-56 bg-white rounded-lg shadow-md snap-center hover:shadow-xl transition-shadow duration-300">
+       <img alt="صورة معلمة رياضيات شابة مبتسمة تحمل كتب الرياضيات في فصل دراسي" class="rounded-t-lg w-full h-36 object-cover" height="144" src="pics/math.jpg" width="224"/>
+       <div class="p-3">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 text-center">
+         أ.ادم وليد 
+        </h3>
+        <p class="text-gray-600 text-xs text-center mb-2">
+         معلم رياضيات بخبرة 8 سنوات في تدريس المرحلة الثانوية.
+        </p>
+        <div class="flex justify-center space-x-4 space-x-reverse text-indigo-600 text-xl">
+         <a aria-label="WhatsApp" class="hover:text-green-500 transition" href="https://wa.me/201234567890" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="hover:text-blue-700 transition" href="https://linkedin.com/in/fatima-zahra" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a aria-label="Email" class="hover:text-red-600 transition" href="mailto:fatima.zahra@example.com" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-envelope">
+          </i>
+         </a>
+        </div>
+       </div>
+      </article>
+      <article class="flex-shrink-0 w-56 bg-white rounded-lg shadow-md snap-center hover:shadow-xl transition-shadow duration-300">
+       <img alt="صورة معلمة لغة إنجليزية شابة تحمل كتب اللغة الإنجليزية في فصل دراسي" class="rounded-t-lg w-full h-36 object-cover" height="144" src="pics/english.jpg" width="224"/>
+       <div class="p-3">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 text-center">
+         أ. ليلى أحمد
+        </h3>
+        <p class="text-gray-600 text-xs text-center mb-2">
+         معلمة لغة إنجليزية متخصصة في المحادثة والقواعد.
+        </p>
+        <div class="flex justify-center space-x-4 space-x-reverse text-indigo-600 text-xl">
+         <a aria-label="WhatsApp" class="hover:text-green-500 transition" href="https://wa.me/201234567891" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="hover:text-blue-700 transition" href="https://linkedin.com/in/layla-ahmed" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a aria-label="Email" class="hover:text-red-600 transition" href="mailto:layla.ahmed@example.com" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-envelope">
+          </i>
+         </a>
+        </div>
+       </div>
+      </article>
+      <article class="flex-shrink-0 w-56 bg-white rounded-lg shadow-md snap-center hover:shadow-xl transition-shadow duration-300">
+       <img alt="صورة معلم علوم يرتدي معطف المختبر في مختبر المدرسة" class="rounded-t-lg w-full h-36 object-cover" height="144" src="pics/seince.jpg" width="224"/>
+       <div class="p-3">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 text-center">
+         أ. سامي محمود
+        </h3>
+        <p class="text-gray-600 text-xs text-center mb-2">
+         معلم علوم بخبرة 10 سنوات في تدريس الفيزياء والكيمياء.
+        </p>
+        <div class="flex justify-center space-x-4 space-x-reverse text-indigo-600 text-xl">
+         <a aria-label="WhatsApp" class="hover:text-green-500 transition" href="https://wa.me/201234567892" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="hover:text-blue-700 transition" href="https://linkedin.com/in/sami-mahmoud" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a aria-label="Email" class="hover:text-red-600 transition" href="mailto:sami.mahmoud@example.com" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-envelope">
+          </i>
+         </a>
+        </div>
+       </div>
+      </article>
+      <article class="flex-shrink-0 w-56 bg-white rounded-lg shadow-md snap-center hover:shadow-xl transition-shadow duration-300">
+       <img alt="صورة معلمة تاريخ تحمل كتاب التاريخ في فصل دراسي" class="rounded-t-lg w-full h-36 object-cover" height="144" src="pics/hist.jpg" width="224"/>
+       <div class="p-3">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 text-center">
+         أ. ريم خالد
+        </h3>
+        <p class="text-gray-600 text-xs text-center mb-2">
+         معلمة تاريخ متخصصة في التاريخ الحديث والمعاصر.
+        </p>
+        <div class="flex justify-center space-x-4 space-x-reverse text-indigo-600 text-xl">
+         <a aria-label="WhatsApp" class="hover:text-green-500 transition" href="https://wa.me/201234567893" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="hover:text-blue-700 transition" href="https://linkedin.com/in/reem-khaled" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a aria-label="Email" class="hover:text-red-600 transition" href="mailto:reem.khaled@example.com" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-envelope">
+          </i>
+         </a>
+        </div>
+       </div>
+      </article>
+      <article class="flex-shrink-0 w-56 bg-white rounded-lg shadow-md snap-center hover:shadow-xl transition-shadow duration-300">
+       <img alt="صورة معلمة لغة عربية تحمل كتب اللغة العربية في فصل دراسي" class="rounded-t-lg w-full h-36 object-cover" height="144" src="pics/arabic.jpg" width="224"/>
+       <div class="p-3">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 text-center">
+         أ. نجلاء سمير
+        </h3>
+        <p class="text-gray-600 text-xs text-center mb-2">
+         معلمة لغة عربية بخبرة 7 سنوات في تدريس الأدب والنحو.
+        </p>
+        <div class="flex justify-center space-x-4 space-x-reverse text-indigo-600 text-xl">
+         <a aria-label="WhatsApp" class="hover:text-green-500 transition" href="https://wa.me/201234567894" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="hover:text-blue-700 transition" href="https://linkedin.com/in/najla-samir" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a aria-label="Email" class="hover:text-red-600 transition" href="mailto:najla.samir@example.com" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-envelope">
+          </i>
+         </a>
+        </div>
+       </div>
+      </article>
+      <article class="flex-shrink-0 w-56 bg-white rounded-lg shadow-md snap-center hover:shadow-xl transition-shadow duration-300">
+       <img alt="صورة معلم تربية رياضية يرتدي زي رياضي في ملعب المدرسة" class="rounded-t-lg w-full h-36 object-cover" height="144" src="pics/history.jpg" width="224"/>
+       <div class="p-3">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 text-center">
+         أ. محمد سعيد
+        </h3>
+        <p class="text-gray-600 text-xs text-center mb-2">
+         معلم تربية رياضية متخصص في تدريب الفرق المدرسية.
+        </p>
+        <div class="flex justify-center space-x-4 space-x-reverse text-indigo-600 text-xl">
+         <a aria-label="WhatsApp" class="hover:text-green-500 transition" href="https://wa.me/201234567895" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-whatsapp">
+          </i>
+         </a>
+         <a aria-label="LinkedIn" class="hover:text-blue-700 transition" href="https://linkedin.com/in/mohamed-saeed" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+         <a aria-label="Email" class="hover:text-red-600 transition" href="mailto:mohamed.saeed@example.com" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-envelope">
+          </i>
+         </a>
+        </div>
+       </div>
+      </article>
+     </div>
+     <button aria-label="السابق" class="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-indigo-600 text-white rounded-full p-3 shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 z-10" id="prevBtn">
+      <i class="fas fa-chevron-right">
+      </i>
+     </button>
+    </div>
+    <div class="flex justify-center mt-8">
+    <a href="../MoreTeachersPage/MoreTeachers.html"> <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition focus:outline-none focus:ring-2 focus:ring-indigo-600" type="button">
+      المزيد من الكوادر
+     </button></a>
+    </div>
+   </section>
+  </main>
+  <br>
+   <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Slider functionality
+    const slider = document.getElementById("slider");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    // Width of one slide + margin (space-x-6 = 1.5rem = 24px)
+    // Each slide width is 224px, margin-right is 24px, so total 248px per slide
+    const slideWidth = 224 + 24;
+
+    prevBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: -slideWidth, behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: slideWidth, behavior: "smooth" });
+    });
+
+    // Optional: Disable buttons at edges
+    function updateButtons() {
+      const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+      prevBtn.disabled = slider.scrollLeft <= 0;
+      nextBtn.disabled = slider.scrollLeft >= maxScrollLeft - 1;
+      prevBtn.classList.toggle("opacity-50", prevBtn.disabled);
+      nextBtn.classList.toggle("opacity-50", nextBtn.disabled);
+      prevBtn.classList.toggle("cursor-not-allowed", prevBtn.disabled);
+      nextBtn.classList.toggle("cursor-not-allowed", nextBtn.disabled);
+    }
+
+    slider.addEventListener("scroll", updateButtons);
+    window.addEventListener("resize", updateButtons);
+    updateButtons();
+  </script>  
+
+    <!-- Section 7: Footer -->
+   
+  <footer class="bg-blue-900 text-white mt-auto select-none" dir="rtl">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-right">
+      <div class="animate-fadeInLeft animate-fadeInLeft-delay-1">
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">عن المدرسة</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">من نحن</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الهيئة التدريسية</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الأنشطة</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الأخبار</a></li>
+        </ul>
+      </div>
+      <div class="animate-fadeInUp animate-fadeInUp-delay-1">
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">الدعم</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">مركز المساعدة</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">التوجيه والإرشاد</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">التواصل معنا</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+      <div class="animate-fadeInRight animate-fadeInRight-delay-1">
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">القوانين</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">سياسة الخصوصية</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">شروط الاستخدام</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">حقوق النشر</a></li>
+          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">القوانين المدرسية</a></li>
+        </ul>
+      </div>
+      <div class="animate-slideUpFade animate-slideUpFade-delay-1">
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">تواصل معنا</h3>
+        <div class="flex space-x-6 justify-start text-lg mb-6">
+          <a href="#" aria-label="فيسبوك" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="تويتر" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" style="animation-delay: 0.2s;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" aria-label="إنستغرام" class="hover:text-pink-500 transition-colors duration-300 animate-pulseScale" style="animation-delay: 0.4s;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="لينكدإن" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" style="animation-delay: 0.6s;">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <form class="mt-2" action="#" method="POST" novalidate>
+          <label for="email" class="sr-only">اشترك في النشرة البريدية</label>
+          <div class="flex rounded-md overflow-hidden border border-blue-700 focus-within:border-blue-400 transition-colors duration-300 shadow-lg hover:shadow-blue-700">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="أدخل بريدك الإلكتروني"
+              required
+              class="w-full px-4 py-2 text-blue-900 placeholder-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1"
+            />
+            <button
+              type="submit"
+              class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold transition-colors duration-300 transform hover:scale-105 focus:scale-105 focus:outline-none"
+            >
+              اشترك
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300 select-none animate-fadeInUp animate-fadeInUp-delay-4">
+      &copy; 2025 مدرسة هوم سكول. جميع الحقوق محفوظة.
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apply for a Job - My Homeschool Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Almarai&family=Amiri&family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Barlow Condensed", "Almarai", "Amiri", "Cairo", sans-serif;
+        background-color: white;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      h2.underline-title {
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h2.underline-title::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background-color: #dc2626; /* Tailwind's red-600 */
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+ <body class="bg-white text-gray-900">
+
+<!-- Section 1: Top Bar, Nav, Hero -->
+     <div  class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
+   <div class="flex items-center space-x-4">
+    <a href="../HomePage/HomePage_En.html"><span class="hidden sm:flex items-center space-x-1 cursor-pointer hover:underline">
+     <i class="fas fa-home text-xs sm:text-sm">
+     </i>
+     <span>
+      Home
+     </span>
+    </span></a>
+    
+    <span class="hidden sm:flex items-center space-x-1 cursor-pointer hover:underline">
+     <i class="fas fa-phone-alt text-xs sm:text-sm">
+     </i>
+    <a href="../CallUsPage/CallUsPage_EN.html"> <span>
+      Contact Us?
+     </span></a>
+    </span>
+   </div>
+   <div class="flex items-center space-x-2">
+    <i class="fas fa-search">
+    </i>
+    <input aria-label="Search Academy" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-36 sm:w-48 focus:outline-none" placeholder="Search ..." type="text"/>
+   </div>
+   <div class="font-bold text-xs sm:text-sm tracking-widest">
+    MY HOMESCHOOL ACADEMY
+   </div>
+   <!-- Language Switcher -->
+   <div class="flex items-center space-x-2">
+       <a href="#" class="text-white hover:underline">EN</a>
+       <span class="text-white">|</span>
+       <a href="Work.html" class="text-white hover:underline">AR</a>
+   </div>
+  </div>
+
+      <!-- Navigation bar -->
+  <nav class="flex items-center justify-center px-4 py-3 border-b border-gray-200 max-w-[1200px] mx-auto relative">
+   <ul class="flex items-center space-x-6 text-sm sm:text-base font-semibold text-gray-700">
+    <li class="relative group cursor-pointer">
+     <span>
+      About Academy
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-10">
+      <a href="../Mann7nPage/mann7n_En.html"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      Who We Are
+      </li>
+      </a>
+      <a href="../HomePage/HomePage_En.html#message"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       Vision and Mission 
+      </li>
+      </a>
+     </ul>
+    </li>
+    <li class="relative group cursor-pointer">
+     <span>
+      Academic Stages
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     KG Stage 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     Primary Stage 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+        Preparatory Stage
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      Secondary Stage 
+      </li>
+     </ul>
+    </li>
+    <a href="../ApplyPage/Apply_En.html"><P class="relative group cursor-pointer">
+     <span>
+      Apply
+    </p>
+    </a>
+    
+    <a href="../WorkPage/Work_En.html"><p class="relative group cursor-pointer">
+     <span style="color: blue;">
+      Jobs
+     </span>
+  </p></a>
+  <a href="../ProfilePage/Profile_En.html"><div class="flex-shrink-0 animate-bounce" style=" position: relative;right: 90vb ;top: 1vw;animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite;">
+    <img alt="Academy Logo - Blue building icon inside a blue circle" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
+   </div>
+  </a>
+  </nav>
+
+    <br /><br /><br />
+    <!-- Form Section -->
+    <main class="flex-grow max-w-4xl mx-auto px-6 pb-16">
+      <form
+        id="jobApplicationForm"
+        class="bg-white p-8 rounded-xl shadow-lg"
+        novalidate
+        enctype="multipart/form-data"
+      >
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label
+              for="name"
+              class="block mb-2 font-semibold text-gray-700"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]"
+            />
+          </div>
+          <div>
+            <label
+              for="phone"
+              class="block mb-2 font-semibold text-gray-700"
+              >Phone Number</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Enter your phone number"
+              pattern="^(\+?\d{1,3}[- ]?)?\d{7,15}$"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]"
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="address"
+              class="block mb-2 font-semibold text-gray-700"
+              >Address</label
+            >
+            <input
+              type="text"
+              id="address"
+              name="address"
+              required
+              placeholder="Enter your full address"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]"
+            />
+          </div>
+          <div>
+            <label
+              for="qualification"
+              class="block mb-2 font-semibold text-gray-700"
+              >Qualification</label
+            >
+            <input
+              type="text"
+              id="qualification"
+              name="qualification"
+              required
+              placeholder="Enter your academic qualification"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]"
+            />
+          </div>
+          <div>
+            <label
+              for="specialization"
+              class="block mb-2 font-semibold text-gray-700"
+              >Specialization</label
+            >
+            <input
+              type="text"
+              id="specialization"
+              name="specialization"
+              required
+              placeholder="Enter your specialization"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]"
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="cv"
+              class="block mb-2 font-semibold text-gray-700"
+              >Resume (Upload PDF or Word file)</label
+            >
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+              required
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]"
+            />
+          </div>
+        </div>
+        <div class="mt-8 text-center">
+          <button
+            type="submit"
+            class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition animate-pulse delay-200"
+          >
+            Submit Application <i class="fas fa-paper-plane ml-2"></i>
+          </button>
+        </div>
+        <div
+          id="successMessage"
+          class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded text-center font-semibold"
+          role="alert"
+          aria-live="polite"
+        >
+          Your application has been submitted successfully! Thank you for applying.
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white mt-auto select-none" dir="ltr">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left"
+      >
+        <div>
+          <h3 class="text-xl font-semibold mb-4 tracking-wide">About School</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Who We Are</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Teaching Staff</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Activities</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >News</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 tracking-wide">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Guidance & Counseling</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 tracking-wide">Policies</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Terms of Use</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >Copyrights</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline hover:text-blue-300 transition-colors duration-300"
+                >School Rules</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4 tracking-wide">Connect With Us</h3>
+          <div class="flex space-x-6 justify-start text-lg mb-6">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale"
+              style="animation-delay: 0.2s"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:text-pink-500 transition-colors duration-300 animate-pulseScale"
+              style="animation-delay: 0.4s"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale"
+              style="animation-delay: 0.6s"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <form class="mt-2" action="#" method="POST" novalidate>
+            <label for="email" class="sr-only">Subscribe to Newsletter</label>
+            <div
+              class="flex rounded-md overflow-hidden border border-blue-700 focus-within:border-blue-400 transition-colors duration-300 shadow-lg hover:shadow-blue-700"
+            >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                class="w-full px-4 py-2 text-blue-900 placeholder-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1"
+              />
+              <button
+                type="submit"
+                class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold transition-colors duration-300 transform hover:scale-105 focus:scale-105 focus:outline-none"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div
+        class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300 select-none"
+      >
+        &copy; 2025 Homeschool Academy. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("jobApplicationForm");
+      const successMessage = document.getElementById("successMessage");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Validate all required fields
+        const name = form.name.value.trim();
+        const phone = form.phone.value.trim();
+        const address = form.address.value.trim();
+        const qualification = form.qualification.value.trim();
+        const specialization = form.specialization.value.trim();
+        const cvInput = form.cv;
+
+        // Phone pattern validation
+        const phonePattern = /^(\+?\d{1,3}[- ]?)?\d{7,15}$/;
+
+        if (
+          name === "" ||
+          phone === "" ||
+          address === "" ||
+          qualification === "" ||
+          specialization === "" ||
+          cvInput.files.length === 0
+        ) {
+          form.reportValidity();
+          return;
+        }
+
+        if (!phonePattern.test(phone)) {
+          alert("Please enter a valid phone number.");
+          form.phone.focus();
+          return;
+        }
+
+        // Validate file type and size (max 5MB)
+        const allowedTypes = [
+          "application/pdf",
+          "application/msword",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        ];
+        const file = cvInput.files[0];
+        if (!allowedTypes.includes(file.type)) {
+          alert("Please upload your resume as a PDF or Word file.");
+          cvInput.focus();
+          return;
+        }
+        const maxSize = 5 * 1024 * 1024; // 5MB
+        if (file.size > maxSize) {
+          alert("File size is too large. Please upload a file smaller than 5MB.");
+          cvInput.focus();
+          return;
+        }
+
+        // If all validations pass
+        form.querySelector('button[type="submit"]').disabled = true;
+        successMessage.classList.remove("hidden");
+        form.reset();
+        successMessage.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>

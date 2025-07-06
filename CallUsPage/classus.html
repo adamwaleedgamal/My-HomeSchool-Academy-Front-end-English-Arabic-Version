@@ -1,0 +1,462 @@
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   أتصل بنا - My Homeschool Academy
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&amp;family=Almarai&amp;family=Amiri&amp;family=Cairo&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+        font-family: 'Barlow Condensed', 'Almarai', 'Amiri', 'Cairo', sans-serif;
+        background-color: #f5f5f5;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      h2.underline-title {
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 900;
+        font-size: 2.25rem; /* text-3xl */
+        filter: blur(1.5px);
+        color: transparent;
+        -webkit-text-stroke: 1px #9e0a1e;
+        animation: glowBlur 3s ease-in-out infinite alternate;
+      }
+      h2.underline-title::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background-color: #dc2626; /* Tailwind red-600 */
+        border-radius: 2px;
+      }
+      @keyframes glowBlur {
+        0% {
+          -webkit-text-stroke-color: #9e0a1e;
+          filter: blur(1.5px);
+          text-shadow: 0 0 6px #9e0a1e;
+        }
+        50% {
+          -webkit-text-stroke-color: #dc2626;
+          filter: blur(0.5px);
+          text-shadow: 0 0 12px #dc2626;
+        }
+        100% {
+          -webkit-text-stroke-color: #9e0a1e;
+          filter: blur(1.5px);
+          text-shadow: 0 0 6px #9e0a1e;
+        }
+      }
+      /* Fade-in animation for form and contact info */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation-fill-mode: forwards;
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
+      .fade-in.delay-100 {
+        animation-delay: 0.1s;
+      }
+      .fade-in.delay-200 {
+        animation-delay: 0.2s;
+      }
+      .fade-in.delay-300 {
+        animation-delay: 0.3s;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  </style>
+ </head>
+ <body class="bg-white text-black">
+  <!-- Section 1: Top Bar, Nav, Hero -->
+     <div  class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
+   <div class="flex items-center space-x-4 space-x-reverse">
+    <a href="../HomePage/HomePage.html"><span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
+     <i class="fas fa-home text-xs sm:text-sm">
+     </i>
+     <span>
+      الرئيسية
+     </span>
+    </span></a>
+    
+    <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
+     <i class="fas fa-phone-alt text-xs sm:text-sm">
+     </i>
+    <a href="../CallUsPage/classus.html"> <span>
+      اتصل بنا ؟
+     </span></a>
+    </span>
+   </div>
+   <div class="flex items-center space-x-2 space-x-reverse">
+    <i class="fas fa-search">
+    </i>
+    <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-36 sm:w-48 focus:outline-none" placeholder="البحث  ..." type="text"/>
+   </div>
+   <div class="font-bold text-xs sm:text-sm tracking-widest">
+    MY HOMESCHOOL ACADEMY
+   </div>
+   <div class="flex items-center space-x-2">
+    <a href="CallUsPage_EN.html" class="text-white hover:underline">EN</a>
+    <span class="text-white">|</span>
+    <a href="#" class="text-white hover:underline">AR</a>
+</div>
+  </div>
+
+      <!-- Navigation bar -->
+  <nav class="flex items-center justify-center px-4 py-3 border-b border-gray-200 max-w-[1200px] mx-auto relative">
+   <ul class="flex items-center space-x-6 space-x-reverse text-sm sm:text-base font-semibold text-gray-700">
+    <li class="relative group cursor-pointer">
+     <span>
+      عن الأكاديمية
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <a href="../Mann7nPage/Mann7n.html"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      من نحن
+      </li>
+      </a>
+      <a href="#message"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       الرؤية والرسالة 
+      </li>
+      </a>
+     </ul>
+    </li>
+    <li class="relative group cursor-pointer">
+     <span>
+      المراحل الدراسية
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     مرحله كي جي 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     المرحلة الابتدائية 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+        المرحلة الاعدادية
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      المرحلة الثانوية 
+      </li>
+     </ul>
+    </li>
+    <a href="../ApplyPage/Apply.html"><P class="relative group cursor-pointer">
+     <span>
+      التقديم
+    </p>
+    </a>
+    
+    <a href="../WorkPage/Work.html"><p class="relative group cursor-pointer">
+     <span>
+      الوظائف
+      <!-- <i class="fas fa-chevron-down text-xs">
+      </i> -->
+     </span>
+     <!-- <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       وظيفة 1
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       وظيفة 2
+      </li>
+     </ul>
+    </li> -->
+  </p></a>
+  <a href="../ProfilePage/Profile.html"><div class="flex-shrink-0 animate-bounce" style=" position: relative;left: 90vb ;top: 1vw;animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite;">
+    <img alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
+   </div>
+  </a>
+  </nav>
+
+  <!-- Contact Us Section -->
+  <section class="max-w-4xl mx-auto my-16 px-6 fade-in delay-100">
+   <h2 class="underline-title text-center mb-8">
+    أتصل بنا
+   </h2>
+   <div class="bg-white rounded-xl shadow-lg p-8 relative">
+    <form action="#" class="space-y-6" id="contactForm" method="POST" novalidate="">
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="name">
+       الاسم الكامل
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="name" name="name" placeholder="أدخل اسمك الكامل" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="email">
+       البريد الإلكتروني
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="phone">
+       رقم الهاتف
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="phone" name="phone" placeholder="أدخل رقم هاتفك" type="tel"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="subject">
+       الموضوع
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="subject" name="subject" placeholder="موضوع الرسالة" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="message">
+       الرسالة
+      </label>
+      <textarea class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="message" name="message" placeholder="اكتب رسالتك هنا..." required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition animate-pulse delay-200" type="submit">
+       إرسال الرسالة
+       <i class="fas fa-paper-plane mr-2">
+       </i>
+      </button>
+     </div>
+    </form>
+    <div aria-live="polite" class="absolute top-4 left-4 right-4 text-center text-green-700 font-semibold text-lg hidden" id="successMessage" role="alert" tabindex="0">
+     تم إرسال رسالتك بنجاح!
+    </div>
+   </div>
+  </section>
+  <!-- Contact Info Section -->
+  <section class="max-w-4xl mx-auto mb-16 px-6 fade-in delay-200">
+   <h2 class="text-3xl font-extrabold mb-8 text-center underline-title">
+    معلومات التواصل
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+    <div class="bg-white rounded-xl shadow-lg p-6">
+     <i class="fas fa-phone-alt text-4xl text-[#9e0a1e] mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      رقم الهاتف
+     </h3>
+     <p class="text-gray-700">
+      +966 555 123 456
+     </p>
+     <p class="text-gray-700">
+      +966 555 654 321
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6">
+     <i class="fas fa-envelope text-4xl text-[#9e0a1e] mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      البريد الإلكتروني
+     </h3>
+     <p class="text-gray-700">
+      info@myhomeschoolacademy.sa
+     </p>
+     <p class="text-gray-700">
+      support@myhomeschoolacademy.sa
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6">
+     <i class="fas fa-map-marker-alt text-4xl text-[#9e0a1e] mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      العنوان
+     </h3>
+     <p class="text-gray-700">
+      الرياض، المملكة العربية السعودية
+     </p>
+     <p class="text-gray-700">
+      شارع الملك فهد، مبنى 12
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white mt-auto select-none" dir="rtl">
+   <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-right">
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      عن المدرسة
+     </h3>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="../Mann7nPage/Mann7n.html">
+        من نحن
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        الهيئة التدريسية
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        الأنشطة
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        الأخبار
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      الدعم
+     </h3>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        مركز المساعدة
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        التوجيه والإرشاد
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        التواصل معنا
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        الأسئلة الشائعة
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      القوانين
+     </h3>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        سياسة الخصوصية
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        شروط الاستخدام
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        حقوق النشر
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        القوانين المدرسية
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      تواصل معنا
+     </h3>
+     <div class="flex space-x-6 justify-start text-lg mb-6">
+      <a aria-label="فيسبوك" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="تويتر" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.2s;">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a aria-label="إنستغرام" class="hover:text-pink-500 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.4s;">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="لينكدإن" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.6s;">
+       <i class="fab fa-linkedin-in">
+       </i>
+      </a>
+     </div>
+     <form action="#" class="mt-2" method="POST" novalidate="">
+      <label class="sr-only" for="email-footer">
+       اشترك في النشرة البريدية
+      </label>
+      <div class="flex rounded-md overflow-hidden border border-blue-700 focus-within:border-blue-400 transition-colors duration-300 shadow-lg hover:shadow-blue-700">
+       <input class="w-full px-4 py-2 text-blue-900 placeholder-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1" id="email-footer" name="email-footer" placeholder="أدخل بريدك الإلكتروني" required="" type="email"/>
+       <button class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold transition-colors duration-300 transform hover:scale-105 focus:scale-105 focus:outline-none" type="submit">
+        اشترك
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300 select-none">
+    © 2025 مدرسة هوم سكول. جميع الحقوق محفوظة.
+   </div>
+  </footer>
+  <script>
+   const form = document.getElementById('contactForm');
+   const successMessage = document.getElementById('successMessage');
+
+   form.addEventListener('submit', function(e) {
+     e.preventDefault();
+
+     // Clear previous success message
+     successMessage.classList.add('hidden');
+
+     // Validate required fields
+     const name = form.name.value.trim();
+     const email = form.email.value.trim();
+     const subject = form.subject.value.trim();
+     const message = form.message.value.trim();
+
+     if (name && email && subject && message) {
+       // All required fields filled
+       // Show success message
+       successMessage.classList.remove('hidden');
+       successMessage.focus();
+
+       // Optionally reset form
+       form.reset();
+     } else {
+       // Highlight missing fields or do nothing (no alert)
+       // We'll add simple red border for empty required fields
+       ['name', 'email', 'subject', 'message'].forEach(id => {
+         const input = form[id];
+         if (!input.value.trim()) {
+           input.classList.add('border-red-600');
+           input.classList.remove('border-gray-300');
+         } else {
+           input.classList.remove('border-red-600');
+           input.classList.add('border-gray-300');
+         }
+       });
+     }
+   });
+
+   // Remove red border on input
+   ['name', 'email', 'subject', 'message'].forEach(id => {
+     const input = form[id];
+     input.addEventListener('input', () => {
+       if (input.value.trim()) {
+         input.classList.remove('border-red-600');
+         input.classList.add('border-gray-300');
+       }
+     });
+   });
+  </script>
+ </body>
+</html>

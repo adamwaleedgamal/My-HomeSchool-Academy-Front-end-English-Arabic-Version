@@ -1,0 +1,454 @@
+<html dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Contact Us - My Homeschool Academy
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&amp;family=Almarai&amp;family=Amiri&amp;family=Cairo&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+        font-family: 'Barlow Condensed', 'Almarai', 'Amiri', 'Cairo', sans-serif;
+        background-color: #f5f5f5;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      h2.underline-title {
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 900;
+        font-size: 2.25rem; /* text-3xl */
+        filter: blur(1.5px);
+        color: transparent;
+        -webkit-text-stroke: 1px #9e0a1e;
+        animation: glowBlur 3s ease-in-out infinite alternate;
+      }
+      h2.underline-title::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background-color: #dc2626; /* Tailwind red-600 */
+        border-radius: 2px;
+      }
+      @keyframes glowBlur {
+        0% {
+          -webkit-text-stroke-color: #9e0a1e;
+          filter: blur(1.5px);
+          text-shadow: 0 0 6px #9e0a1e;
+        }
+        50% {
+          -webkit-text-stroke-color: #dc2626;
+          filter: blur(0.5px);
+          text-shadow: 0 0 12px #dc2626;
+        }
+        100% {
+          -webkit-text-stroke-color: #9e0a1e;
+          filter: blur(1.5px);
+          text-shadow: 0 0 6px #9e0a1e;
+        }
+      }
+      /* Fade-in animation for form and contact info */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation-fill-mode: forwards;
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
+      .fade-in.delay-100 {
+        animation-delay: 0.1s;
+      }
+      .fade-in.delay-200 {
+        animation-delay: 0.2s;
+      }
+      .fade-in.delay-300 {
+        animation-delay: 0.3s;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+
+<!-- Section 1: Top Bar, Nav, Hero -->
+     <div  class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
+   <div class="flex items-center space-x-4">
+    <a href="../HomePage/HomePage_En.html"><span class="hidden sm:flex items-center space-x-1 cursor-pointer hover:underline">
+     <i class="fas fa-home text-xs sm:text-sm">
+     </i>
+     <span>
+      Home
+     </span>
+    </span></a>
+    
+    <span class="hidden sm:flex items-center space-x-1 cursor-pointer hover:underline">
+     <i class="fas fa-phone-alt text-xs sm:text-sm">
+     </i>
+    <a href="../CallUsPage/CallUsPage_EN.html"> <span>
+      Contact Us?
+     </span></a>
+    </span>
+   </div>
+   <div class="flex items-center space-x-2">
+    <i class="fas fa-search">
+    </i>
+    <input aria-label="Search Academy" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-36 sm:w-48 focus:outline-none" placeholder="Search ..." type="text"/>
+   </div>
+   <div class="font-bold text-xs sm:text-sm tracking-widest">
+    MY HOMESCHOOL ACADEMY
+   </div>
+   <!-- Language Switcher -->
+   <div class="flex items-center space-x-2">
+       <a href="#" class="text-white hover:underline">EN</a>
+       <span class="text-white">|</span>
+       <a href="classus.html" class="text-white hover:underline">AR</a>
+   </div>
+  </div>
+
+      <!-- Navigation bar -->
+  <nav class="flex items-center justify-center px-4 py-3 border-b border-gray-200 max-w-[1200px] mx-auto relative">
+   <ul class="flex items-center space-x-6 text-sm sm:text-base font-semibold text-gray-700">
+    <li class="relative group cursor-pointer">
+     <span>
+      About Academy
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-10">
+      <a href="../Mann7nPage/mann7n_En.html"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      Who We Are
+      </li>
+      </a>
+      <a href="../HomePage/HomePage_En.html#message"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       Vision and Mission 
+      </li>
+      </a>
+     </ul>
+    </li>
+    <li class="relative group cursor-pointer">
+     <span>
+      Academic Stages
+      <i class="fas fa-chevron-down text-xs">
+      </i>
+     </span>
+     <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-10">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     KG Stage 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+     Primary Stage 
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+        Preparatory Stage
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+      Secondary Stage 
+      </li>
+     </ul>
+    </li>
+    <a href="../ApplyPage/Apply_En.html"><P class="relative group cursor-pointer">
+     <span>
+      Apply
+    </p>
+    </a>
+    
+    <a href="../WorkPage/Work_En.html"><p class="relative group cursor-pointer">
+     <span>
+      Jobs
+     </span>
+  </p></a>
+  <a href="../ProfilePage/Profile_En.html"><div class="flex-shrink-0 animate-bounce" style=" position: relative;right: 90vb ;top: 1vw;animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite;">
+    <img alt="Academy Logo - Blue building icon inside a blue circle" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
+   </div>
+  </a>
+  </nav>
+
+
+  <!-- Contact Us Section -->
+  <section class="max-w-4xl mx-auto my-16 px-6 fade-in delay-100">
+   <h2 class="underline-title text-center mb-8">
+    Contact Us
+   </h2>
+   <div class="bg-white rounded-xl shadow-lg p-8 relative">
+    <form action="#" class="space-y-6" id="contactForm" method="POST" novalidate="">
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="name">
+       Full Name
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="name" name="name" placeholder="Enter your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="email">
+       Email Address
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="email" name="email" placeholder="Enter your email address" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="phone">
+       Phone Number
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="phone" name="phone" placeholder="Enter your phone number" type="tel"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="subject">
+       Subject
+      </label>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="subject" name="subject" placeholder="Message Subject" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-700" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition animate-pulse delay-200" type="submit">
+       Send Message
+       <i class="fas fa-paper-plane mr-2">
+       </i>
+      </button>
+     </div>
+    </form>
+    <div aria-live="polite" class="absolute top-4 left-4 right-4 text-center text-green-700 font-semibold text-lg hidden" id="successMessage" role="alert" tabindex="0">
+     Your message has been sent successfully!
+    </div>
+   </div>
+  </section>
+  <!-- Contact Info Section -->
+  <section class="max-w-4xl mx-auto mb-16 px-6 fade-in delay-200">
+   <h2 class="text-3xl font-extrabold mb-8 text-center underline-title">
+    Contact Information
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+    <div class="bg-white rounded-xl shadow-lg p-6">
+     <i class="fas fa-phone-alt text-4xl text-[#9e0a1e] mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Phone Number
+     </h3>
+     <p class="text-gray-700">
+      +966 555 123 456
+     </p>
+     <p class="text-gray-700">
+      +966 555 654 321
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6">
+     <i class="fas fa-envelope text-4xl text-[#9e0a1e] mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Email Address
+     </h3>
+     <p class="text-gray-700">
+      info@myhomeschoolacademy.sa
+     </p>
+     <p class="text-gray-700">
+      support@myhomeschoolacademy.sa
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6">
+     <i class="fas fa-map-marker-alt text-4xl text-[#9e0a1e] mb-4">
+     </i>
+     <h3 class="text-xl font-semibold mb-2">
+      Address
+     </h3>
+     <p class="text-gray-700">
+      Riyadh, Saudi Arabia
+     </p>
+     <p class="text-gray-700">
+      King Fahd Road, Building 12
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white mt-auto select-none" dir="ltr">
+   <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      About School
+     </h3>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="../Mann7nPage/mann7n_En.html">
+        Who We Are
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Teaching Staff
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Activities
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        News
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      Support
+     </h3>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Help Center
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Guidance & Counseling
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Contact Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      Policies
+     </h3>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Terms of Use
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        Copyrights
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
+        School Rules
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 tracking-wide">
+      Connect With Us
+     </h3>
+     <div class="flex space-x-6 justify-start text-lg mb-6">
+      <a aria-label="Facebook" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.2s;">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-pink-500 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.4s;">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="LinkedIn" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.6s;">
+       <i class="fab fa-linkedin-in">
+       </i>
+      </a>
+     </div>
+     <form action="#" class="mt-2" method="POST" novalidate="">
+      <label class="sr-only" for="email-footer">
+       Subscribe to Newsletter
+      </label>
+      <div class="flex rounded-md overflow-hidden border border-blue-700 focus-within:border-blue-400 transition-colors duration-300 shadow-lg hover:shadow-blue-700">
+       <input class="w-full px-4 py-2 text-blue-900 placeholder-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1" id="email-footer" name="email-footer" placeholder="Enter your email" required="" type="email"/>
+       <button class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold transition-colors duration-300 transform hover:scale-105 focus:scale-105 focus:outline-none" type="submit">
+        Subscribe
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300 select-none">
+    © 2025 Homeschool Academy. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   const form = document.getElementById('contactForm');
+   const successMessage = document.getElementById('successMessage');
+
+   form.addEventListener('submit', function(e) {
+     e.preventDefault();
+
+     // Clear previous success message
+     successMessage.classList.add('hidden');
+
+     // Validate required fields
+     const name = form.name.value.trim();
+     const email = form.email.value.trim();
+     const subject = form.subject.value.trim();
+     const message = form.message.value.trim();
+
+     if (name && email && subject && message) {
+       // All required fields filled
+       // Show success message
+       successMessage.classList.remove('hidden');
+       successMessage.focus();
+
+       // Optionally reset form
+       form.reset();
+     } else {
+       // Highlight missing fields or do nothing (no alert)
+       // We'll add simple red border for empty required fields
+       ['name', 'email', 'subject', 'message'].forEach(id => {
+         const input = form[id];
+         if (!input.value.trim()) {
+           input.classList.add('border-red-600');
+           input.classList.remove('border-gray-300');
+         } else {
+           input.classList.remove('border-red-600');
+           input.classList.add('border-gray-300');
+         }
+       });
+     }
+   });
+
+   // Remove red border on input
+   ['name', 'email', 'subject', 'message'].forEach(id => {
+     const input = form[id];
+     input.addEventListener('input', () => {
+       if (input.value.trim()) {
+         input.classList.remove('border-red-600');
+         input.classList.add('border-gray-300');
+       }
+     });
+   });
+  </script>
+ </body>
+</html>
