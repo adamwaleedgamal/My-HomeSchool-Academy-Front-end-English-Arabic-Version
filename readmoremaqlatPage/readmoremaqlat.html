@@ -7,6 +7,8 @@
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
+    <link rel="icon" href="../HomePage/pics/logo-modified.png" type="image/png">
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
   <style>
@@ -16,107 +18,75 @@
   </style>
  </head>
  <body class="bg-gray-100">
-  <!-- Section 1: Top Bar, Nav -->
-  <div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
-   <div class="flex items-center space-x-4 space-x-reverse">
-    <a href="../HomePage/HomePage.html">
-     <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
-      <i class="fas fa-home text-xs sm:text-sm">
-      </i>
-      <span>
-       الرئيسية
-      </span>
-     </span>
+ <!-- Section 1: Top Bar -->
+<div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] w-full">
+  <!-- Right side links (Home, Contact) -->
+  <div class="flex items-center space-x-4 space-x-reverse">
+    <a href="../HomePage/HomePage.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
+      <i class="fas fa-home text-xs sm:text-sm"></i>
+      <span>الرئيسية</span>
     </a>
-    <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
-     <i class="fas fa-phone-alt text-xs sm:text-sm">
-     </i>
-     <a href="../CallUsPage/classus.html">
-      <span>
-       اتصل بنا ؟
-      </span>
-     </a>
-    </span>
-   </div>
-   <div class="flex items-center space-x-2 space-x-reverse">
-    <i class="fas fa-search">
-    </i>
-    <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-36 sm:w-48 focus:outline-none" placeholder="البحث  ..." type="text"/>
-   </div>
-   <div class="font-bold text-xs sm:text-sm tracking-widest">
-    MY HOMESCHOOL ACADEMY
-   </div>
-      <!-- Language Switcher -->
-   <div class="flex items-center space-x-2">
-       <a href="readmoremaqalat_En.html" class="text-white hover:underline">EN</a>
-       <span class="text-white">|</span>
-       <a href="#" class="text-white hover:underline">AR</a>
-   </div>
+    <a href="../CallUsPage/classus.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
+      <i class="fas fa-phone-alt text-xs sm:text-sm"></i>
+      <span>اتصل بنا؟</span>
+    </a>
   </div>
-  <!-- Navigation bar -->
-  <nav class="flex items-center justify-center px-4 py-3 border-b border-gray-200 max-w-[1200px] mx-auto relative">
-   <ul class="flex items-center space-x-6 space-x-reverse text-sm sm:text-base font-semibold text-gray-700">
+
+  <!-- Center search -->
+  <div class="flex items-center space-x-2 space-x-reverse">
+    <i class="fas fa-search"></i>
+    <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-24 sm:w-48 focus:outline-none" placeholder="البحث ..." type="text"/>
+  </div>
+
+  <!-- Left text -->
+  <div class="font-bold text-[10px] sm:text-sm tracking-widest text-center hidden md:block">
+    MY HOMESCHOOL ACADEMY
+  </div>
+
+  <!-- Language Switcher -->
+  <div class="flex items-center space-x-2 space-x-reverse">
+    <a href="readmoremaqalat_En.html" class="hover:underline text-xs">EN</a>
+    <span class="text-xs">|</span>
+    <a href="#" class="hover:underline text-xs">AR</a>
+  </div>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="flex items-center justify-between px-4 py-3 border-b border-gray-200 max-w-7xl mx-auto relative bg-white z-10">
+  <!-- Right side: menu -->
+  <ul class="flex items-center space-x-4 space-x-reverse sm:space-x-6 text-xs sm:text-base font-semibold text-gray-700">
     <li class="relative group cursor-pointer">
-     <span>
-      عن الأكاديمية
-      <i class="fas fa-chevron-down text-xs">
-      </i>
-     </span>
-     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
-      <a href="../Mann7nPage/Mann7n.html">
-       <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-        من نحن
-       </li>
-      </a>
-      <a href="#message">
-       <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-        الرؤية والرسالة
-       </li>
-      </a>
-     </ul>
+      <span>عن الأكاديمية <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
+      <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-20">
+        <li><a href="../Mann7nPage/Mann7n.html" class="block px-3 py-1 hover:bg-gray-100">من نحن</a></li>
+        <li><a href="../HomePage/HomePage.html#message" class="block px-3 py-1 hover:bg-gray-100">الرؤية والرسالة</a></li>
+      </ul>
     </li>
     <li class="relative group cursor-pointer">
-     <span>
-      المراحل الدراسية
-      <i class="fas fa-chevron-down text-xs">
-      </i>
-     </span>
-     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
-      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-       مرحله كي جي
-      </li>
-      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-       المرحلة الابتدائية
-      </li>
-      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-       المرحلة الاعدادية
-      </li>
-      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-       المرحلة الثانوية
-      </li>
-     </ul>
+      <span>المراحل الدراسية <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
+      <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-20">
+        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">مرحلة كي جي</li>
+        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الابتدائية</li>
+        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الإعدادية</li>
+        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الثانوية</li>
+      </ul>
     </li>
-    <a href="../ApplyPage/Apply.html">
-     <p class="relative group cursor-pointer">
-      <span>
-       التقديم
-      </span>
-     </p>
-    </a>
-    <a href="../WorkPage/Work.html">
-     <p class="relative group cursor-pointer">
-      <span>
-       الوظائف
-      </span>
-     </p>
-    </a>
-    <a href="../ProfilePage/Profile.html">
-     <div class="flex-shrink-0 animate-bounce" style="position: relative; left: 90vb; top: 1vw; animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite">
-      <img alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
-     </div>
-    </a>
-   </ul>
-  </nav>
+    <li><a href="../ApplyPage/Apply.html" class="hover:text-blue-700">التقديم</a></li>
+    <li><a href="../WorkPage/Work.html" class="hover:text-blue-700">الوظائف</a></li>
+  </ul>
+
+  
+<!-- شعار الأكاديمية - ثابت الحجم -->
+<a href="../ProfilePage/Profile.html" class="absolute left-4 top-1/2 transform -translate-y-1/2">
+  <img 
+    src="../HomePage/pics/logo-modified.png" 
+    alt="شعار الأكاديمية" 
+    class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full shadow-md border border-gray-300"
+  />
+</a>
+
+
+</nav>
   <!-- Banner Section -->
   <section class="w-full max-w-[100%] h-[300px] mx-auto overflow-hidden">
    <img alt="صورة توضيحية لصف تفاصيل الخبر، تظهر مكتب دراسة مع كتب وأوراق وأجهزة تعليمية" class="w-full h-full object-cover" height="300" src="maqalatone.jpg" width="1200"/>
