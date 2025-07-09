@@ -19,7 +19,7 @@
       html {
         scroll-behavior: smooth;
       }
-      h2.underline-title {
+       h2.underline-title {
         position: relative;
         display: inline-block;
         margin-left: auto;
@@ -28,7 +28,7 @@
         font-size: 2.25rem; /* text-3xl */
         filter: blur(1.5px);
         color: transparent;
-        -webkit-text-stroke: 1px #9e0a1e;
+        -webkit-text-stroke: 1px blue;
         animation: glowBlur 3s ease-in-out infinite alternate;
       }
       h2.underline-title::after {
@@ -39,24 +39,24 @@
         transform: translateX(-50%);
         width: 60px;
         height: 4px;
-        background-color: #dc2626; /* Tailwind red-600 */
+        background-color: blue; /* Tailwind red-600 */
         border-radius: 2px;
       }
       @keyframes glowBlur {
         0% {
-          -webkit-text-stroke-color: #9e0a1e;
+          -webkit-text-stroke-color: #808080;
           filter: blur(1.5px);
-          text-shadow: 0 0 6px #9e0a1e;
+          text-shadow: 0 0 6px blue;
         }
         50% {
-          -webkit-text-stroke-color: #dc2626;
+          -webkit-text-stroke-color: 808080;
           filter: blur(0.5px);
-          text-shadow: 0 0 12px #dc2626;
+          text-shadow: 0 0 12px black;
         }
         100% {
-          -webkit-text-stroke-color: #9e0a1e;
+          -webkit-text-stroke-color: blue;
           filter: blur(1.5px);
-          text-shadow: 0 0 6px #9e0a1e;
+          text-shadow: 0 0 6px blue;
         }
       }
       /* Fade-in animation for form and contact info */
@@ -87,7 +87,7 @@
  </head>
  <body class="bg-white text-black">
  <!-- Section 1: Top Bar -->
-<div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] w-full">
+<div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#808080] w-full">
   <!-- Right side links (Home, Contact) -->
   <div class="flex items-center space-x-4 space-x-reverse">
     <a href="../HomePage/HomePage.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
@@ -167,34 +167,34 @@
       <label class="block mb-2 font-semibold text-gray-700" for="name">
        الاسم الكامل
       </label>
-      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="name" name="name" placeholder="أدخل اسمك الكامل" required="" type="text"/>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[blue]" id="name" name="name" placeholder="أدخل اسمك الكامل" required="" type="text"/>
      </div>
      <div>
       <label class="block mb-2 font-semibold text-gray-700" for="email">
        البريد الإلكتروني
       </label>
-      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required="" type="email"/>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[blue]" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required="" type="email"/>
      </div>
      <div>
       <label class="block mb-2 font-semibold text-gray-700" for="phone">
        رقم الهاتف
       </label>
-      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="phone" name="phone" placeholder="أدخل رقم هاتفك" type="tel"/>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[blue]" id="phone" name="phone" placeholder="أدخل رقم هاتفك" type="tel"/>
      </div>
      <div>
       <label class="block mb-2 font-semibold text-gray-700" for="subject">
        الموضوع
       </label>
-      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="subject" name="subject" placeholder="موضوع الرسالة" required="" type="text"/>
+      <input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[blue]" id="subject" name="subject" placeholder="موضوع الرسالة" required="" type="text"/>
      </div>
      <div>
       <label class="block mb-2 font-semibold text-gray-700" for="message">
        الرسالة
       </label>
-      <textarea class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9e0a1e]" id="message" name="message" placeholder="اكتب رسالتك هنا..." required="" rows="5"></textarea>
+      <textarea class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[blue]" id="message" name="message" placeholder="اكتب رسالتك هنا..." required="" rows="5"></textarea>
      </div>
      <div class="text-center">
-      <button class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition animate-pulse delay-200" type="submit">
+      <button class="bg-gradient-to-l from-[#1a1a4d] to-[#808080] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition animate-pulse delay-200" type="submit">
        إرسال الرسالة
        <i class="fas fa-paper-plane mr-2">
        </i>
@@ -213,7 +213,7 @@
    </h2>
    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
     <div class="bg-white rounded-xl shadow-lg p-6">
-     <i class="fas fa-phone-alt text-4xl text-[#9e0a1e] mb-4">
+     <i class="fas fa-phone-alt text-4xl text-[blue] mb-4">
      </i>
      <h3 class="text-xl font-semibold mb-2">
       رقم الهاتف
@@ -226,7 +226,7 @@
      </p>
     </div>
     <div class="bg-white rounded-xl shadow-lg p-6">
-     <i class="fas fa-envelope text-4xl text-[#9e0a1e] mb-4">
+     <i class="fas fa-envelope text-4xl text-[blue] mb-4">
      </i>
      <h3 class="text-xl font-semibold mb-2">
       البريد الإلكتروني
@@ -239,7 +239,7 @@
      </p>
     </div>
     <div class="bg-white rounded-xl shadow-lg p-6">
-     <i class="fas fa-map-marker-alt text-4xl text-[#9e0a1e] mb-4">
+     <i class="fas fa-map-marker-alt text-4xl text-[blue] mb-4">
      </i>
      <h3 class="text-xl font-semibold mb-2">
       العنوان
