@@ -1,228 +1,195 @@
+<!DOCTYPE html>
 <html dir="rtl" lang="ar">
- <head>
+<head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   My Homeschool Academy
-  </title>
-  <link rel="stylesheet" href="../HomePage/footer.css">
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
-    <link rel="icon" href="../HomePage/pics/logo-modified.png" type="image/png">
+  <title>الأخبار - My Homeschool Academy</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="../HomePage/pics/logo-modified.png" type="image/png">
+
+  <!-- Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+  <!-- Inline Styles -->
   <style>
-   body {
+    body {
       font-family: 'Cairo', sans-serif;
+      background-color: #f5f5f5;
+    }
+    h2.underline-title {
+      position: relative;
+      display: inline-block;
+    }
+    h2.underline-title::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #2563eb, #1a1a4d);
+      border-radius: 2px;
     }
   </style>
- </head>
+</head>
 
- <body>
- <!-- Section 1: Top Bar -->
-<div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#808080] w-full">
-  <!-- Right side links (Home, Contact) -->
-  <div class="flex items-center space-x-4 space-x-reverse">
-    <a href="../HomePage/HomePage.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
-      <i class="fas fa-home text-xs sm:text-sm"></i>
-      <span>الرئيسية</span>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Top Bar -->
+  <div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#808080] w-full">
+    <div class="flex items-center space-x-4 space-x-reverse">
+      <a href="../HomePage/HomePage.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
+        <i class="fas fa-home text-xs sm:text-sm"></i>
+        <span>الرئيسية</span>
+      </a>
+      <a href="../CallUsPage/classus.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
+        <i class="fas fa-phone-alt text-xs sm:text-sm"></i>
+        <span>اتصل بنا؟</span>
+      </a>
+    </div>
+    <div class="flex items-center space-x-2 space-x-reverse">
+      <i class="fas fa-search"></i>
+      <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-24 sm:w-48 focus:outline-none" placeholder="البحث ..." type="text"/>
+    </div>
+    <div class="font-bold text-[10px] sm:text-sm tracking-widest text-center hidden md:block">
+      MY HOMESCHOOL ACADEMY
+    </div>
+    <div class="flex items-center space-x-2 space-x-reverse">
+      <a href="News_En.html" class="hover:underline text-xs">EN</a>
+      <span class="text-xs">|</span>
+      <a href="#" class="hover:underline text-xs">AR</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="flex items-center justify-between px-4 py-3 border-b border-gray-200 max-w-7xl mx-auto relative bg-white z-10">
+    <ul class="flex items-center space-x-4 space-x-reverse sm:space-x-6 text-xs sm:text-base font-semibold text-gray-700">
+      <li class="relative group cursor-pointer">
+        <span>عن الأكاديمية <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
+        <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-20">
+          <li><a href="../Mann7nPage/Mann7n.html" class="block px-3 py-1 hover:bg-gray-100">من نحن</a></li>
+          <li><a href="../HomePage/HomePage.html#message" class="block px-3 py-1 hover:bg-gray-100">الرؤية والرسالة</a></li>
+        </ul>
+      </li>
+      <li class="relative group cursor-pointer">
+        <span>المراحل الدراسية <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
+        <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-20">
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">مرحلة كي جي</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الابتدائية</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الإعدادية</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الثانوية</li>
+        </ul>
+      </li>
+      <li><a href="../ApplyPage/Apply.html" class="hover:text-blue-700">التقديم</a></li>
+      <li><a href="../WorkPage/Work.html" class="hover:text-blue-700">الوظائف</a></li>
+    </ul>
+    <a href="../ProfilePage/Profile.html" class="absolute left-4 top-1/2 transform -translate-y-1/2">
+      <img src="../HomePage/pics/logo-modified.png" alt="شعار الأكاديمية" class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full shadow-md border border-gray-300"/>
     </a>
-    <a href="../CallUsPage/classus.html" class="flex items-center space-x-1 space-x-reverse hover:underline">
-      <i class="fas fa-phone-alt text-xs sm:text-sm"></i>
-      <span>اتصل بنا؟</span>
-    </a>
-  </div>
+  </nav>
 
-  <!-- Center search -->
-  <div class="flex items-center space-x-2 space-x-reverse">
-    <i class="fas fa-search"></i>
-    <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-24 sm:w-48 focus:outline-none" placeholder="البحث ..." type="text"/>
-  </div>
+  <!-- Main Content (Corrected for Alignment) -->
+  <main class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Banner Image -->
+      <div class="relative w-full h-[300px] rounded-xl overflow-hidden mb-12 shadow-lg">
+        <img src="new.jpg" alt="طفل يدرس" class="object-cover w-full h-full" />
+      </div>
 
-  <!-- Left text -->
-  <div class="font-bold text-[10px] sm:text-sm tracking-widest text-center hidden md:block">
-    MY HOMESCHOOL ACADEMY
-  </div>
-
-  <!-- Language Switcher -->
-  <div class="flex items-center space-x-2 space-x-reverse">
-    <a href="News_En.html" class="hover:underline text-xs">EN</a>
-    <span class="text-xs">|</span>
-    <a href="#" class="hover:underline text-xs">AR</a>
-  </div>
-</div>
-
-<!-- Navigation Bar -->
-<nav class="flex items-center justify-between px-4 py-3 border-b border-gray-200 max-w-7xl mx-auto relative bg-white z-10">
-  <!-- Right side: menu -->
-  <ul class="flex items-center space-x-4 space-x-reverse sm:space-x-6 text-xs sm:text-base font-semibold text-gray-700">
-    <li class="relative group cursor-pointer">
-      <span>عن الأكاديمية <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
-      <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-20">
-        <li><a href="../Mann7nPage/Mann7n.html" class="block px-3 py-1 hover:bg-gray-100">من نحن</a></li>
-        <li><a href="../HomePage/HomePage.html#message" class="block px-3 py-1 hover:bg-gray-100">الرؤية والرسالة</a></li>
-      </ul>
-    </li>
-    <li class="relative group cursor-pointer">
-      <span>المراحل الدراسية <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
-      <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-20">
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">مرحلة كي جي</li>
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الابتدائية</li>
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الإعدادية</li>
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الثانوية</li>
-      </ul>
-    </li>
-    <li><a href="../ApplyPage/Apply.html" class="hover:text-blue-700">التقديم</a></li>
-    <li><a href="../WorkPage/Work.html" class="hover:text-blue-700">الوظائف</a></li>
-  </ul>
-
-  
-<!-- شعار الأكاديمية - ثابت الحجم -->
-<a href="../ProfilePage/Profile.html" class="absolute left-4 top-1/2 transform -translate-y-1/2">
-  <img 
-    src="../HomePage/pics/logo-modified.png" 
-    alt="شعار الأكاديمية" 
-    class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full shadow-md border border-gray-300"
-  />
-</a>
-
-
-</nav>
-
-  
-  <!-- Banner Section -->
-   <!-- Top Banner -->
-    <div class="w-full p-4">
-    <div class="relative w-full h-[300px] rounded-xl overflow-hidden mb-6 shadow-md" data-aos="fade-up">
-      <img src="new.jpg" alt="صورة طفل يدرس" class="object-cover w-full h-full" />
+      <!-- News Articles -->
+      <div class="text-center mb-12">
+        <h2 class="underline-title text-3xl font-extrabold inline-block">آخر الأخبار</h2>
+      </div>
+      
+      <div class="space-y-12">
+        <!-- News Item 1 -->
+        <article class="bg-white rounded-lg shadow-md overflow-hidden text-[#0a0a3e] flex flex-col md:flex-row-reverse">
+          <img alt="صبي يرتدي نظارات يدرس على مكتب" class="w-full md:w-1/3 object-cover" src="newsOne.jpg"/>
+          <div class="p-6 md:p-8 text-right">
+            <h3 class="font-bold text-2xl mb-3">أكاديمية التعليم المنزلي تطلق برنامجًا جديدًا</h3>
+            <p class="mb-4 leading-relaxed text-base">تقدم أكاديمية التعليم المنزلي برنامجًا تعليميًا متكاملاً للطلاب في المنازل، مع التركيز على المنهج الأمريكي وتوفير بيئة تعليمية محفزة. البرنامج الجديد يهدف إلى تعزيز مهارات الطلاب في العلوم والرياضيات.</p>
+            <a class="text-blue-600 font-semibold hover:underline" href="../ReadMoreNewsPage/ReadMoreNews.html">اقرأ المزيد</a>
+          </div>
+        </article>
+        
+        <!-- News Item 2 -->
+        <article class="bg-white rounded-lg shadow-md overflow-hidden text-[#0a0a3e] flex flex-col md:flex-row-reverse">
+          <img alt="شعار أكاديمية التعليم المنزلي" class="w-full md:w-1/3 object-cover" src="NewsTwo.jpg"/>
+          <div class="p-6 md:p-8 text-right">
+            <h3 class="font-bold text-2xl mb-3">تحديثات المنهج الأمريكي للعام الدراسي القادم</h3>
+            <p class="mb-4 leading-relaxed text-base">أعلنت الأكاديمية عن تحديثات مهمة في المنهج الأمريكي للعام الدراسي القادم، تشمل مواد جديدة وأنشطة تفاعلية لتعزيز تجربة التعلم المنزلي وجعلها أكثر متعة وفعالية.</p>
+            <a class="text-blue-600 font-semibold hover:underline" href="../ReadMoreNewsPage/ReadMoreNews.html">اقرأ المزيد</a>
+          </div>
+        </article>
+        
+        <!-- News Item 3 -->
+        <article class="bg-white rounded-lg shadow-md overflow-hidden text-[#0a0a3e] flex flex-col md:flex-row-reverse">
+          <img alt="طلاب يدرسون في بيئة منزلية" class="w-full md:w-1/3 object-cover" src="NewsTrue.jpg"/>
+          <div class="p-6 md:p-8 text-right">
+            <h3 class="font-bold text-2xl mb-3">ورش عمل تفاعلية للطلاب وأولياء الأمور</h3>
+            <p class="mb-4 leading-relaxed text-base">تنظم الأكاديمية ورش عمل تفاعلية للطلاب وأولياء الأمور لتعزيز مهارات التعليم المنزلي وتبادل الخبرات، مع التركيز على استخدام التكنولوجيا الحديثة في التعليم.</p>
+            <a class="text-blue-600 font-semibold hover:underline" href="../ReadMoreNewsPage/ReadMoreNews.html">اقرأ المزيد</a>
+          </div>
+        </article>
+      </div>
     </div>
-    </div>
-
-
- <div style="background-color: white;">
-  <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
-   <!-- News Item 1 -->
-        <h2 class="underline-title text-3xl font-extrabold mb-8 text-center">أخر الأخبار</h2>
-
-   <article class="bg-white rounded-md shadow-md overflow-hidden text-[#0a0a3e]">
-    <img alt="صبي يرتدي نظارات يدرس على مكتب في بيئة تعليمية" class="w-full object-cover h-48 sm:h-64" height="300" src="newsOne.jpg" width="600"/>
-    <div class="p-6 text-right">
-     <h2 class="font-bold text-2xl mb-3">
-      أكاديمية التعليم المنزلي تطلق برنامجًا جديدًا
-     </h2>
-     <p class="mb-4 leading-relaxed text-base">
-      تقدم أكاديمية التعليم المنزلي برنامجًا تعليميًا متكاملاً للطلاب في المنازل، مع التركيز على المنهج الأمريكي وتوفير بيئة تعليمية محفزة. البرنامج الجديد يهدف إلى تعزيز مهارات الطلاب في العلوم والرياضيات.
-     </p>
-     <a class="text-[blue] font-semibold hover:underline" href="../ReadMoreNewsPage/ReadMoreNews.html">
-      اقرأ المزيد
-     </a>
-    </div>
-   </article>
-   <!-- News Item 2 -->
-   <article class="bg-white rounded-md shadow-md overflow-hidden text-[#0a0a3e]">
-    <img alt="شعار أكاديمية التعليم المنزلي My Homeschool Academy باللون الأبيض على خلفية زرقاء داكنة" class="w-full object-cover h-48 sm:h-64" height="300" src="NewsTwo.jpg" width="600"/>
-    <div class="p-6 text-right">
-     <h2 class="font-bold text-2xl mb-3">
-      تحديثات المنهج الأمريكي للعام الدراسي القادم
-     </h2>
-     <p class="mb-4 leading-relaxed text-base">
-      أعلنت الأكاديمية عن تحديثات مهمة في المنهج الأمريكي للعام الدراسي القادم، تشمل مواد جديدة وأنشطة تفاعلية لتعزيز تجربة التعلم المنزلي وجعلها أكثر متعة وفعالية.
-     </p>
- <a class="text-[blue] font-semibold hover:underline" href="../ReadMoreNewsPage/ReadMoreNews.html">
-      اقرأ المزيد
-     </a>
-    </div>
-   </article>
-   <!-- News Item 3 -->
-   <article class="bg-white rounded-md shadow-md overflow-hidden text-[#0a0a3e]">
-    <img alt="طلاب يدرسون في بيئة تعليمية منزلية" class="w-full object-cover h-48 sm:h-64" height="300" src="NewsTrue.jpg" width="600"/>
-    <div class="p-6 text-right">
-     <h2 class="font-bold text-2xl mb-3">
-      ورش عمل تفاعلية للطلاب وأولياء الأمور
-     </h2>
-     <p class="mb-4 leading-relaxed text-base">
-      تنظم الأكاديمية ورش عمل تفاعلية للطلاب وأولياء الأمور لتعزيز مهارات التعليم المنزلي وتبادل الخبرات، مع التركيز على استخدام التكنولوجيا الحديثة في التعليم.
-     </p>
-    <a class="text-[blue] font-semibold hover:underline" href="../ReadMoreNewsPage/ReadMoreNews.html">
-      اقرأ المزيد
-     </a>
-    </div>
-   </article>
   </main>
-</div>
- <!-- Section 7: Footer -->
-   
-  <footer class="bg-blue-900 text-white mt-auto select-none" dir="rtl">
-    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-right">
-      <div class="animate-fadeInLeft animate-fadeInLeft-delay-1">
+
+  <!-- Footer (Corrected for Alignment) -->
+  <footer class="bg-blue-900 text-white mt-auto select-none">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-right">
+      <div>
         <h3 class="text-xl font-semibold mb-4 tracking-wide">عن المدرسة</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">من نحن</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الهيئة التدريسية</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الأنشطة</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الأخبار</a></li>
+          <li><a href="#" class="hover:underline">من نحن</a></li>
+          <li><a href="#" class="hover:underline">الهيئة التدريسية</a></li>
+          <li><a href="#" class="hover:underline">الأنشطة</a></li>
+          <li><a href="#" class="hover:underline">الأخبار</a></li>
         </ul>
       </div>
-      <div class="animate-fadeInUp animate-fadeInUp-delay-1">
+      <div>
         <h3 class="text-xl font-semibold mb-4 tracking-wide">الدعم</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">مركز المساعدة</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">التوجيه والإرشاد</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">التواصل معنا</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">الأسئلة الشائعة</a></li>
+          <li><a href="#" class="hover:underline">مركز المساعدة</a></li>
+          <li><a href="#" class="hover:underline">التوجيه والإرشاد</a></li>
+          <li><a href="#" class="hover:underline">التواصل معنا</a></li>
+          <li><a href="#" class="hover:underline">الأسئلة الشائعة</a></li>
         </ul>
       </div>
-      <div class="animate-fadeInRight animate-fadeInRight-delay-1">
+      <div>
         <h3 class="text-xl font-semibold mb-4 tracking-wide">القوانين</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">سياسة الخصوصية</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">شروط الاستخدام</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">حقوق النشر</a></li>
-          <li><a href="#" class="hover:underline hover:text-blue-300 transition-colors duration-300">القوانين المدرسية</a></li>
+          <li><a href="#" class="hover:underline">سياسة الخصوصية</a></li>
+          <li><a href="#" class="hover:underline">شروط الاستخدام</a></li>
+          <li><a href="#" class="hover:underline">حقوق النشر</a></li>
+          <li><a href="#" class="hover:underline">القوانين المدرسية</a></li>
         </ul>
       </div>
-      <div class="animate-slideUpFade animate-slideUpFade-delay-1">
+      <div>
         <h3 class="text-xl font-semibold mb-4 tracking-wide">تواصل معنا</h3>
-        <div class="flex space-x-6 justify-start text-lg mb-6">
-          <a href="#" aria-label="فيسبوك" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" aria-label="تويتر" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" style="animation-delay: 0.2s;">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" aria-label="إنستغرام" class="hover:text-pink-500 transition-colors duration-300 animate-pulseScale" style="animation-delay: 0.4s;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" aria-label="لينكدإن" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" style="animation-delay: 0.6s;">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+        <div class="flex space-x-6 space-x-reverse justify-start text-lg mb-6">
+          <a href="#" aria-label="فيسبوك" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="تويتر" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="إنستغرام" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="لينكدإن" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <form class="mt-2" action="#" method="POST" novalidate>
-          <label for="email" class="sr-only">اشترك في النشرة البريدية</label>
-          <div class="flex rounded-md overflow-hidden border border-blue-700 focus-within:border-blue-400 transition-colors duration-300 shadow-lg hover:shadow-blue-700">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="أدخل بريدك الإلكتروني"
-              required
-              class="w-full px-4 py-2 text-blue-900 placeholder-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1"
-            />
-            <button
-              type="submit"
-              class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold transition-colors duration-300 transform hover:scale-105 focus:scale-105 focus:outline-none"
-            >
-              اشترك
-            </button>
+          <div class="flex flex-row-reverse rounded-md overflow-hidden border border-blue-700">
+            <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required class="w-full px-4 py-2 text-blue-900 bg-white placeholder-gray-500 focus:outline-none"/>
+            <button type="submit" class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold">اشترك</button>
           </div>
         </form>
       </div>
     </div>
-    <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300 select-none animate-fadeInUp animate-fadeInUp-delay-4">
-      &copy; 2025 مدرسة هوم سكول. جميع الحقوق محفوظة.
+    <div class="border-t border-blue-800 mt-8 py-6 text-center text-sm text-blue-300">
+      © 2025 أكاديمية التعليم المنزلي. جميع الحقوق محفوظة.
     </div>
   </footer>
-
- </body>
+</body>
 </html>

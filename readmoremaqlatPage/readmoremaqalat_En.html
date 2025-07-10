@@ -1,237 +1,174 @@
+<!DOCTYPE html>
 <html dir="ltr" lang="en">
- <head>
+<head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>Article Details - My Homeschool Academy</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
-    <link rel="icon" href="../HomePage/pics/logo-modified.png" type="image/png">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../HomePage/pics/logo-modified.png" type="image/png">
 
+  <!-- Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+  <!-- Inline Styles -->
   <style>
-   body {
+    body {
       font-family: "Cairo", sans-serif;
+      background-color: #f5f5f5;
     }
   </style>
- </head>
- <body class="bg-white text-gray-900">
+</head>
+<body class="bg-gray-100 text-gray-900">
 
-<!-- Section 1: Top Bar -->
-<div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#808080] w-full">
-  <div class="flex items-center space-x-4">
-    <a href="../HomePage/HomePage_En.html" class="flex items-center space-x-1 hover:underline">
-      <i class="fas fa-home text-xs sm:text-sm"></i>
-      <span>Home</span>
+  <!-- Top Bar -->
+  <div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#808080] w-full">
+    <div class="flex items-center space-x-4">
+      <a href="../HomePage/HomePage_En.html" class="flex items-center space-x-1 hover:underline">
+        <i class="fas fa-home text-xs sm:text-sm"></i>
+        <span>Home</span>
+      </a>
+      <a href="../CallUsPage/CallUsPage_EN.html" class="flex items-center space-x-1 hover:underline">
+        <i class="fas fa-phone-alt text-xs sm:text-sm"></i>
+        <span>Contact Us?</span>
+      </a>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="fas fa-search"></i>
+      <input aria-label="Search Academy" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-24 sm:w-48 focus:outline-none" placeholder="Search ..." type="text"/>
+    </div>
+    <div class="font-bold text-[10px] sm:text-sm tracking-widest text-center hidden md:block">
+      MY HOMESCHOOL ACADEMY
+    </div>
+    <div class="flex items-center space-x-2">
+      <a href="#" class="hover:underline text-xs">EN</a>
+      <span class="text-xs">|</span>
+      <a href="readmoremaqlat.html" class="hover:underline text-xs">AR</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="flex items-center justify-between px-4 py-3 border-b border-gray-200 max-w-7xl mx-auto relative bg-white z-10">
+    <ul class="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-base font-semibold text-gray-700">
+      <li class="relative group cursor-pointer">
+        <span>About Academy <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
+        <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-20">
+          <li><a href="../Mann7nPage/mann7n_En.html" class="block px-3 py-1 hover:bg-gray-100">Who We Are</a></li>
+          <li><a href="../HomePage/HomePage_En.html#message" class="block px-3 py-1 hover:bg-gray-100">Vision and Mission</a></li>
+        </ul>
+      </li>
+      <li class="relative group cursor-pointer">
+        <span>Academic Stages <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
+        <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-20">
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">KG Stage</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">Primary Stage</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">Preparatory Stage</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">Secondary Stage</li>
+        </ul>
+      </li>
+      <li><a href="../ApplyPage/Apply_En.html" class="hover:text-blue-700">Apply</a></li>
+      <li><a href="../WorkPage/Work_En.html" class="hover:text-blue-700">Jobs</a></li>
+    </ul>
+    <a href="../ProfilePage/Profile_En.html" class="absolute right-4 top-1/2 transform -translate-y-1/2">
+      <img src="../HomePage/pics/logo-modified.png" alt="Academy Logo" class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full shadow-md border border-gray-300"/>
     </a>
-    <a href="../CallUsPage/CallUsPage_EN.html" class="flex items-center space-x-1 hover:underline">
-      <i class="fas fa-phone-alt text-xs sm:text-sm"></i>
-      <span>Contact Us?</span>
-    </a>
-  </div>
+  </nav>
 
-  <div class="flex items-center space-x-2">
-    <i class="fas fa-search"></i>
-    <input aria-label="Search Academy" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-24 sm:w-48 focus:outline-none" placeholder="Search ..." type="text"/>
-  </div>
+  <!-- Main Content (Corrected for Alignment) -->
+  <main class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Banner Section -->
+      <section class="relative w-full h-[300px] rounded-xl overflow-hidden mb-12 shadow-lg">
+        <img alt="Illustrative image showing a study desk" class="w-full h-full object-cover" src="maqalatone.jpg"/>
+      </section>
 
-  <div class="font-bold text-[10px] sm:text-sm tracking-widest text-center hidden md:block">
-    MY HOMESCHOOL ACADEMY
-  </div>
-
-  <div class="flex items-center space-x-2">
-    <a href="#" class="hover:underline text-xs">EN</a>
-    <span class="text-xs">|</span>
-    <a href="readmoremaqlat.html" class="hover:underline text-xs">AR</a>
-  </div>
-</div>
-
-<!-- Navigation Bar -->
-<nav class="flex items-center justify-between px-4 py-3 border-b border-gray-200 max-w-7xl mx-auto relative bg-white z-10">
-  <ul class="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-base font-semibold text-gray-700">
-    <li class="relative group cursor-pointer">
-      <span>About Academy <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
-      <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-20">
-        <li><a href="../Mann7nPage/mann7n_En.html" class="block px-3 py-1 hover:bg-gray-100">Who We Are</a></li>
-        <li><a href="../HomePage/HomePage_En.html#message" class="block px-3 py-1 hover:bg-gray-100">Vision and Mission</a></li>
-      </ul>
-    </li>
-    <li class="relative group cursor-pointer">
-      <span>Academic Stages <i class="fas fa-chevron-down text-[10px] sm:text-xs"></i></span>
-      <ul class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-left z-20">
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">KG Stage</li>
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">Primary Stage</li>
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">Preparatory Stage</li>
-        <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">Secondary Stage</li>
-      </ul>
-    </li>
-    <li><a href="../ApplyPage/Apply_En.html" class="hover:text-blue-700">Apply</a></li>
-    <li><a href="../WorkPage/Work_En.html" class="hover:text-blue-700">Jobs</a></li>
-  </ul>
-
-  <!-- Logo - fixed size -->
-  <a href="../ProfilePage/Profile_En.html" class="absolute right-4 top-1/2 transform -translate-y-1/2">
-  <img 
-    src="../HomePage/pics/logo-modified.png" 
-    alt="Academy Logo" 
-    class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full shadow-md border border-gray-300"
-  />
-</a>
-
-</nav>
-
-  <!-- Banner Section -->
-  <section class="w-full max-w-[100%] h-[300px] mx-auto overflow-hidden">
-   <img alt="Illustrative image for article details page, showing a study desk with books, papers, and educational devices" class="w-full h-full object-cover" height="300" src="maqalatone.jpg" width="1200"/>
-  </section>
-  <!-- Article Details Section -->
-  <main class="max-w-4xl mx-auto px-4 py-12 bg-white rounded-md shadow-md mt-8 mb-12 text-[#0a0a3e] text-left">
-   <h1 class="text-3xl font-bold mb-6">
-    Homeschool Academy Launches New Program
-   </h1>
-   <img alt="Boy wearing glasses studying at a desk in an educational environment, with books and educational tools spread around him" class="w-full rounded-md mb-8 object-cover max-h-96" height="400" loading="lazy" src="maqalattwo.jpg" width="800"/>
-   <p class="mb-6 leading-relaxed text-lg">
-    My Homeschool Academy offers a comprehensive educational program for students at home, focusing on the American curriculum and providing a stimulating learning environment. The new program aims to enhance students' skills in science and mathematics.
-   </p>
-   <img alt="Students studying in a modern classroom equipped with educational devices and interactive screens" class="w-full rounded-md mb-8 object-cover max-h-96" height="400" loading="lazy" src="maqalatthird.jpg" width="800"/>
-   <p class="mb-6 leading-relaxed text-lg">
-    The new program includes a set of interactive lessons, practical activities, and workshops aimed at developing students' critical thinking and problem-solving skills. The program also provides continuous support from specialized teachers to ensure the best educational outcomes.
-   </p>
-   <img alt="Teacher explaining a lesson to students in a homeschooling environment using technology" class="w-full rounded-md mb-8 object-cover max-h-96" height="400" loading="lazy" src="maqlatfourth.jpg" width="800"/>
-   <p class="mb-6 leading-relaxed text-lg">
-    In addition, the program is designed to be flexible to suit each student's needs, with access to online educational resources at any time. Through this program, the Academy seeks to empower students and parents to achieve a successful and enjoyable learning experience at home.
-   </p>
-   <div class="flex justify-between items-center mt-10">
-    <a class="text-[blue] font-semibold hover:underline text-lg flex items-center space-x-2" href="../HomePage/HomePage_En.html#maqaltt">
-     <i class="fas fa-arrow-left">
-     </i>
-     <span>
-      Back to Articles
-     </span>
-    </a>
-   </div>
+      <!-- Article Details Section -->
+      <article class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12 text-[#0a0a3e] text-left">
+        <h1 class="text-3xl lg:text-4xl font-bold mb-8">Homeschool Academy Launches New Program</h1>
+        
+        <img alt="A boy with glasses studying at a desk" class="w-full rounded-md mb-8 object-cover max-h-96" loading="lazy" src="maqalattwo.jpg"/>
+        
+        <p class="mb-6 leading-relaxed text-lg">
+          My Homeschool Academy offers a comprehensive educational program for students at home, focusing on the American curriculum and providing a stimulating learning environment. The new program aims to enhance students' skills in science and mathematics.
+        </p>
+        
+        <img alt="Students in a modern classroom" class="w-full rounded-md mb-8 object-cover max-h-96" loading="lazy" src="maqalatthird.jpg"/>
+        
+        <p class="mb-6 leading-relaxed text-lg">
+          The new program includes a set of interactive lessons, practical activities, and workshops aimed at developing students' critical thinking and problem-solving skills. The program also provides continuous support from specialized teachers to ensure the best educational outcomes.
+        </p>
+        
+        <img alt="Teacher explaining a lesson using technology" class="w-full rounded-md mb-8 object-cover max-h-96" loading="lazy" src="maqlatfourth.jpg"/>
+        
+        <p class="mb-6 leading-relaxed text-lg">
+          In addition, the program is designed to be flexible to suit each student's needs, with access to online educational resources at any time. Through this program, the Academy seeks to empower students and parents to achieve a successful and enjoyable learning experience at home.
+        </p>
+        
+        <div class="border-t pt-6 mt-10">
+          <a class="text-blue-600 font-semibold hover:underline text-lg flex items-center gap-2" href="../MoreMaqlatPage/MoreMaqlat_En.html">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Articles</span>
+          </a>
+        </div>
+      </article>
+      
+    </div>
   </main>
-  <!-- Section 7: Footer -->
-  <footer class="bg-blue-900 text-white mt-auto select-none" dir="ltr">
-   <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
-    <div class="animate-fadeInLeft animate-fadeInLeft-delay-1">
-     <h3 class="text-xl font-semibold mb-4 tracking-wide">
-      About School
-     </h3>
-     <ul class="space-y-2 text-sm">
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Who We Are
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Teaching Staff
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Activities
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        News
-       </a>
-      </li>
-     </ul>
-    </div>
-    <div class="animate-fadeInUp animate-fadeInUp-delay-1">
-     <h3 class="text-xl font-semibold mb-4 tracking-wide">
-      Support
-     </h3>
-     <ul class="space-y-2 text-sm">
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Help Center
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Guidance & Counseling
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Contact Us
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        FAQ
-       </a>
-      </li>
-     </ul>
-    </div>
-    <div class="animate-fadeInRight animate-fadeInRight-delay-1">
-     <h3 class="text-xl font-semibold mb-4 tracking-wide">
-      Policies
-     </h3>
-     <ul class="space-y-2 text-sm">
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Privacy Policy
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Terms of Use
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        Copyrights
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline hover:text-blue-300 transition-colors duration-300" href="#">
-        School Rules
-       </a>
-      </li>
-     </ul>
-    </div>
-    <div class="animate-slideUpFade animate-slideUpFade-delay-1">
-     <h3 class="text-xl font-semibold mb-4 tracking-wide">
-      Connect With Us
-     </h3>
-     <div class="flex space-x-6 justify-start text-lg mb-6">
-      <a aria-label="Facebook" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#">
-       <i class="fab fa-facebook-f">
-       </i>
-      </a>
-      <a aria-label="Twitter" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.2s">
-       <i class="fab fa-twitter">
-       </i>
-      </a>
-      <a aria-label="Instagram" class="hover:text-pink-500 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.4s">
-       <i class="fab fa-instagram">
-       </i>
-      </a>
-      <a aria-label="LinkedIn" class="hover:text-blue-400 transition-colors duration-300 animate-pulseScale" href="#" style="animation-delay: 0.6s">
-       <i class="fab fa-linkedin-in">
-       </i>
-      </a>
-     </div>
-     <form action="#" class="mt-2" method="POST" novalidate="">
-      <label class="sr-only" for="email">
-       Subscribe to Newsletter
-      </label>
-      <div class="flex rounded-md overflow-hidden border border-blue-700 focus-within:border-blue-400 transition-colors duration-300 shadow-lg hover:shadow-blue-700">
-       <input class="w-full px-4 py-2 text-blue-900 placeholder-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
-       <button class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold transition-colors duration-300 transform hover:scale-105 focus:scale-105 focus:outline-none" type="submit">
-        Subscribe
-       </button>
+  
+  <!-- Footer (Corrected for Alignment) -->
+  <footer class="bg-blue-900 text-white mt-auto select-none">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">About School</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Who We Are</a></li>
+          <li><a href="#" class="hover:underline">Teaching Staff</a></li>
+          <li><a href="#" class="hover:underline">Activities</a></li>
+          <li><a href="#" class="hover:underline">News</a></li>
+        </ul>
       </div>
-     </form>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">Support</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Help Center</a></li>
+          <li><a href="#" class="hover:underline">Guidance & Counseling</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">Policies</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms of Use</a></li>
+          <li><a href="#" class="hover:underline">Copyrights</a></li>
+          <li><a href="#" class="hover:underline">School Rules</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 tracking-wide">Connect With Us</h3>
+        <div class="flex space-x-6 justify-start text-lg mb-6">
+          <a aria-label="Facebook" class="hover:text-blue-400" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a aria-label="Twitter" class="hover:text-blue-400" href="#"><i class="fab fa-twitter"></i></a>
+          <a aria-label="Instagram" class="hover:text-pink-500" href="#"><i class="fab fa-instagram"></i></a>
+          <a aria-label="LinkedIn" class="hover:text-blue-400" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <form action="#" class="mt-2" method="POST" novalidate>
+          <div class="flex rounded-md overflow-hidden border border-blue-700">
+            <input class="w-full px-4 py-2 text-blue-900 bg-white placeholder-gray-500 focus:outline-none" name="email" placeholder="Enter your email" required type="email"/>
+            <button class="bg-blue-700 hover:bg-blue-600 text-white px-5 py-2 font-semibold" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
     </div>
-   </div>
-   <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300 select-none animate-fadeInUp animate-fadeInUp-delay-4">
-    &copy; 2025 Homeschool Academy. All rights reserved.
-   </div>
+    <div class="border-t border-blue-800 mt-8 py-6 text-center text-sm text-blue-300">
+      © 2025 Homeschool Academy. All rights reserved.
+    </div>
   </footer>
- </body>
+</body>
 </html>
